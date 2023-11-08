@@ -8,7 +8,7 @@ $ProcessaCrawler = new ProcessaCrawler();
 $domc = new Crawler();
 
 // $content = file_get_contents("./ct.html");
-$content = file_get_contents("https://www.linkcorreios.com.br/{seu-codigo-aqui}");
+$content = file_get_contents("https://www.linkcorreios.com.br/OZ210054658BR");
 
 $filtro = ".linha_status";
 
