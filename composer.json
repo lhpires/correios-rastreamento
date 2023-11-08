@@ -1,6 +1,8 @@
 {
     "name": "lhpires/correios-rastreamento",
     "description": "Facilitador de rastreamento dos Correios por meio da tecnica Crawler",
+    "license": "GPL-3.0-or-later",
+    "type": "library",
     "autoload": {
         "psr-4": {
             "lhpires\\CorreiosRastreamento\\": "src/"
