@@ -25,13 +25,14 @@ class ProcessaCrawler
             {
                 // array_push($arrlinks, $link->getUri());
     
-                $link->lhpires = explode(PHP_EOL,$link->nodeValue);
+                $link->lhpires = explode("\n",$link->nodeValue);
     
                 if((int) count($link->lhpires) > 0){               
     
                     $link->lhpires = array_values(array_filter(array_map("trim",$link->lhpires), function($verificador_nulo) {
                         return strlen(trim($verificador_nulo)) > 0;
                     }));
+
 
                 
                     
@@ -57,9 +58,6 @@ class ProcessaCrawler
     
         }
 
-        echo $dados = json_encode($dados,JSON_UNESCAPED_UNICODE);
-
-
-
+        return $dados = json_encode($dados,JSON_UNESCAPED_UNICODE);
     }
 }
