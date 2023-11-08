@@ -17,10 +17,8 @@
     "require": {
         "php": ">=5.4",
         "symfony/dom-crawler": "2.8.52",
+        "symfony/css-selector": "2.8.52",
         "symfony/polyfill-mbstring": "1.0.0"
-    },
-    "require-dev": {
-        "symfony/css-selector": "2.8.52"
     },
     "minimum-stability": "dev"
 }
