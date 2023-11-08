@@ -1,0 +1,20 @@
+{
+    "name": "lhpires/correios-rastreamento",
+    "description": "Facilitador de rastreamento dos Correios por meio da tecnica Crawler",
+    "autoload": {
+        "psr-4": {
+            "lhpires\\CorreiosRastreamento\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lucas Pires",
+            "email": "lucas91172@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/dom-crawler": "2.8.52",
+        "symfony/css-selector": "2.8.52",
+        "symfony/polyfill-mbstring": "1.0.0"
+    }
+}
