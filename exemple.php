@@ -7,8 +7,9 @@ use lhpires\CorreiosRastreamento\ProcessaCrawler;
 $ProcessaCrawler = new ProcessaCrawler();
 $domc = new Crawler();
 
-// $content = file_get_contents("./ct.html");
-$content = file_get_contents("https://www.linkcorreios.com.br/OZ210054658BR");
+$codigo = (isset($_GET['codigo'])) ? $_GET['codigo'] : "";
+
+$content = file_get_contents("https://www.linkcorreios.com.br/{$codigo}");
 
 $filtro = ".linha_status";
 
@@ -17,3 +18,5 @@ $jsonRastreio = $ProcessaCrawler::htmlToJson($content,$filtro,$domc);
 echo "<pre>";
 var_dump($jsonRastreio);
 echo "</pre>";
+
+?>
